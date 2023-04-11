@@ -13,8 +13,7 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// home
 Route::get('/', [ProductController::class, "index"]);
-
+// save product in json file
 Route::post('save-product', [ProductController::class, "store"])->name('save-product');
-
